@@ -15,6 +15,12 @@ class CreateTodo extends Component {
     });
   };
 
+  mapDispatchToProps = dispatch => {
+    return {
+      addTodo: () => dispatch(<some action>)
+    }
+  }
+
   render() {
     return(
       <div>
